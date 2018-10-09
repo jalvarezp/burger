@@ -1,10 +1,11 @@
-CREATE DATABASE eatburger_db;
+CREATE DATABASE burgers_db;
 
-USE eatburger_db;
+USE burgers_db;
 
-CREATE table burger(
-id int auto_increment NOT NULL,
-name VARCHAR (250) NOT NULL,
-devoured BOOLEAN default false,
-primary key(id)
+CREATE TABLE burgers (
+	id INT (10) AUTO_INCREMENT NOT NULL,
+    burger_name VARCHAR (100) NOT NULL,
+    devoured BOOLEAN,
+    date TIMESTAMP,
+    PRIMARY KEY (id)
 );
